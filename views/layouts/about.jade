@@ -1,0 +1,56 @@
+doctype html
+html
+    head
+        // Include the meta tags
+        include ../partials/meta.jade
+    body
+
+        // Include the Navbar
+        include ../partials/navbar.jade
+        include ../partials/mixins.jade
+        +navbar('About')
+
+        +section('About Leannovate', 'Providing best videos of starting a company to young and aspiring entrepreneurs.', '/img/me.png')
+        .col-md-12.about-us
+            .col-md-6.col-md-offset-3.statement
+                img(src='/img/send.png')
+                h2 Mission
+                p 
+                    | Leannovate is a digital-media aggregation website that provides unique startup content for young and aspiring entrepreneurs to learn more about solving a problem and how to create successful startups. We just provide content, entrepreneurs make it happen! 
+                    br
+                    br
+                    | The name originated from the word 'Lean' and 'Innovate'. Lean + Innovate = Leannovate! The Lean refers to the Lean methodology that is well known in the startup world.
+            .col-md-10.col-md-offset-1
+                hr
+            .col-md-6.col-md-offset-3.statement
+                img(src='/img/pencil.png')
+                h2 Story
+                p 
+                    | One day I wanted to learn more about startups, innovation, etc. and I decided to go on YouTube and find them. I didn't have an exact idea of what I wanted to look for; I just wanted something that would provide value to me as a young aspiring entprereneur.
+                    br
+                    br
+                    | It took me a while to find the right videos and then the lightbulb went off. I wanted to create a platform where entrepreneurs can learn more about creating companies, understand the terms and world of startups, by providing books they can read or videos they can watch.
+                    br
+                    br
+                    | That's bascially what goal of Leannovate is. It is to help young entpreneurs persue innovation and make a difference in a world where everyone wants to be an entrepreneur/CEO, but not have the right knowledge or the experience.
+            .col-md-10.col-md-offset-1
+                hr
+            .col-md-6.col-md-offset-3.statement
+                img(src='/img/heart.png')
+                h2 About Me
+                p 
+                    | I am Keshav Narula, founder of Leannovate! I'm a 3rd year college student at San Jose State University, studying Computer Science and minoring in Business Finance! I fell in love with the idea of entrepre-neurship and changing the world. With these aspirations ever since a kid in India, I landed in Silicon Valley.
+                    br
+                    br
+                    | I've worked as a Front-End Web Developer at a startup, done Freelance work, designed many User Interfaces for my friends and I'm the founder of Venture club at SJSU which strives to help and teach students how to go from an idea to a product.
+                    br
+                    br
+                    | Learn more about me at my portfolio and blog:
+                    br
+                    a(href='http://narulakeshav.com', target='_blank') http://narulakeshav.com/about
+
+        // Include Footer 
+        include ../partials/footer.jade
+
+        // Include the scripts
+        include ../partials/scripts.jade

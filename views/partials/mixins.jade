@@ -1,0 +1,128 @@
+mixin card(link, title, description, date, person)
+     .col-md-12.card
+        .col-md-12.video.no-pad
+            iframe(src=link, frameborder='0', allowfullscreen='true')
+         .col-md-12
+            .top
+                h3= title
+            .about
+                p.description= description
+                p.by Posted 
+                    span= date
+                    |  • features 
+                    span= person
+            .share
+                a(href='#').btn.btn-share 
+                    span.fa.fa-facebook &nbsp;&nbsp;
+                    | Share
+                a(href='#').btn.btn-share 
+                    span.fa.fa-twitter &nbsp;&nbsp;
+                    | Tweet
+                a(href='#').btn.btn-share 
+                    span.fa.fa-linkedin &nbsp;&nbsp;
+                    | Share
+mixin smallCard(link, title, description, date, person)
+     .col-md-12.card.small
+        .col-md-12.video.no-pad
+            iframe(src=link, frameborder='0', allowfullscreen='true')
+         .col-md-12.text
+            .top
+                h3= title
+            .about
+                p.by Posted 
+                    span= date
+                    |  • 
+                    span= person
+            .share
+                a(href='#').btn.btn-share 
+                    span.fa.fa-facebook
+                a(href='#').btn.btn-share 
+                    span.fa.fa-twitter
+                a(href='#').btn.btn-share 
+                    span.fa.fa-linkedin
+mixin context(catalogName, catalogDescription)
+    .header
+        .catalog-name= catalogName
+        .catalog-description= catalogDescription
+mixin pane(link, term, definition)
+    a(href=link)
+        .pane
+            p.term= term
+            p.def= definition
+mixin article(link, title, date)
+    a(href=link)
+        .article
+            p.title= title
+            p.date= date
+mixin section(title, description, image)
+    .col-md-12.section
+        .col-md-10.col-md-offset-1
+            .col-md-2
+                img(src=image)
+            .col-md-5
+                h2= title
+                p= description
+mixin book(img, title, author, description, number, link)
+    .col-md-6.no-pad
+        .col-md-12.book-review
+            a(href=link, target='_blank')
+                img(src=img)
+            h2= title
+            small= author
+            p= description
+            .ratings
+                p 
+                    span= number
+                    | /5
+                .rates
+                    if number == '4'
+                        span.fa.fa-star
+                        span.fa.fa-star
+                        span.fa.fa-star
+                        span.fa.fa-star
+                        span.fa.fa-star-o
+                    else if number == '5'
+                        span.fa.fa-star
+                        span.fa.fa-star
+                        span.fa.fa-star
+                        span.fa.fa-star
+                        span.fa.fa-star
+                    else
+                        span.fa.fa-star
+                        span.fa.fa-star
+                        span.fa.fa-star
+                        span.fa.fa-star
+                        span.fa.fa-star-half-o
+            a.btn.btn-get-book(href=link, target='_blank') 
+                span.fa.fa-amazon &nbsp;&nbsp;
+                | Get #{title}
+mixin term(word, definition)
+    - var link = 'https://www.google.com/#q=' + word.toLowerCase();
+    .col-md-12.definition
+        h3= word
+        p= definition
+        a(href=link, target='_blank').btn.btn-search
+            span.fa.fa-google &nbsp;&nbsp;
+            | Search #{word}
+mixin suggestion(description, target, inverse)
+    if inverse == true
+        .col-md-12.submit.inverse
+            p= description
+                a(data-toggle='modal' data-target='#{target}') click here and submit the link.
+    else 
+        .col-md-12.submit
+            p= description
+                a(data-toggle='modal' data-target='#{target}') click here and submit the link.
+mixin category(title, description, video, link1, web1, link2, web2, link3, web3)
+    .col-md-4
+        .row.categories.no-pad
+            iframe(src=video, frameborder='0', allowfullscreen='true')
+            img(src='/img/pencil.png')
+            h3= title
+            p= description
+            hr
+            a(href=link1, target='_blank').btn.btn-view= web1
+            a(href=link2, target='_blank').btn.btn-view= web2
+            a(href=link3, target='_blank').btn.btn-view= web3
+            br
+            br

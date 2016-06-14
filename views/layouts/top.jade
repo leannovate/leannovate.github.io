@@ -1,0 +1,27 @@
+doctype html
+html
+    head
+        // Include the meta tags
+        include ../partials/meta.jade
+    body
+        // Include the Navbar
+        include ../partials/mixins.jade
+        include ../partials/navbar.jade
+        +navbar('Top Ten')
+
+        +section('Startup Basics', 'Understand the core fundamentals and basics of creating a startup.', '/img/top.png')
+
+        // Enter Content Here 
+        .col-md-12.basics-div
+            +category('Business Plan', 'A business plan is an essential roadmap for business success. This living document generally projects 3-5 years ahead and outlines the route a company intends to take to grow revenues.', 'https://www.youtube.com/embed/x0y3VgjhGw0', 'https://www.sba.gov/starting-business/write-your-business-plan', 'SBA', 'https://www.entrepreneur.com/article/247574', 'Entrepreneur', 'http://www.forbes.com/sites/davelavinsky/2013/12/03/business-plan-outline-23-point-checklist-for-success/#112e1ea23012', 'Forbes')
+
+            +category('Cash Flow', 'Cash flow is the net amount of cash and cash-equivalents moving into and out of a business. Positive cash flow indicates that a company\'s liquid assets are increasing, enabling it to settle debts.', 'https://www.youtube.com/embed/GkGdlgX3xYI', 'http://www.inc.com/resources/finance/articles/20050601/cashcrisis.html', 'Inc.', 'http://www.investopedia.com/terms/c/cashflow.asp', 'Investopedia', 'https://www.entrepreneur.com/encyclopedia/cash-flow', 'Entrepreneur')
+
+            +category('Initial Public Offering', 'Going public refers to a private company\'s initial public offering (IPO), thus becoming a publicly traded and owned entity. Businesses usually go public to raise capital in hopes of expanding.', 'https://www.youtube.com/embed/_qvqel3zasA', 'http://www.investopedia.com/ask/answers/04/061704.asp', 'Investopedia', 'https://www.entrepreneur.com/article/52826', 'Entrepreneur', 'http://smallbusiness.findlaw.com/business-finances/pros-and-cons-going-public.html', 'FindLaw')
+
+
+        // Include Footer 
+        include ../partials/footer.jade
+
+        // Include the scripts
+        include ../partials/scripts.jade

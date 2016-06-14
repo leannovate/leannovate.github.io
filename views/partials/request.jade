@@ -1,0 +1,34 @@
+mixin customModal(category, hashtag)
+    .modal.fade(id=hashtag, tabindex='-1', role='dialog')
+        .modal-dialog
+            .modal-content
+                .modal-header
+                    .row
+                        button.close(data-dismiss='modal', aria-label='Close')
+                            span(aria-hidden='true') ×
+                    p Submit a #{category}
+                .modal-body
+                    h4 About
+                    if category == 'Book'
+                        input(id="title", placeholder="Zero to One")
+                        input(id="author", placeholder="Peter Theil")
+                        textarea(rows="2", placeholder="Best book ever by Peter Theil that talks about how successful startups are created and how it's about solving a problem.")
+                        h4 Ratings (1-5)
+                        input(type='number', id='rating', placeholder='4.7')
+                        h4 Amazon Link
+                        input(id="link", placeholder="http://www.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296")
+
+                    else if category == 'Video'
+                        input(id="title", placeholder="Title of the video")
+                        textarea(rows="2", placeholder="Enter a sentence or two about the video...")
+                        h4 Who's in the video?
+                        input(id='rating', placeholder='Name of person it features')
+                        h4 YouTube Embed Link
+                        input(id="link", placeholder="https://www.youtube.com/watch?v=092JQrye9IM")
+
+                    else if category =='Term'
+                        input(id="title", placeholder="Term")
+                        textarea(rows="4", placeholder="Definition of the term...")
+                .modal-footer
+                    button.btn.btn-cancel(data-dismiss='modal') Cancel
+                    button.btn.btn-note#add(data-dismiss='modal') Submit

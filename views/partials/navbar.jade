@@ -1,0 +1,63 @@
+mixin navbar(menu)
+    nav.navbar.navbar-default.navbar-fixed-top
+        .container-fluid
+            .navbar-header
+                button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+                    span.sr-only Toggle navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+            #bs-example-navbar-collapse-1.collapse.navbar-collapse
+                ul.nav.navbar-nav
+                        if menu == 'Leannovate'
+                            li.active
+                                a(href='/') Leannovate
+                        else
+                            li
+                                a(href='/') Leannovate
+                        if menu == 'Top Ten'
+                            li.active
+                                a(href='/top/') Startup Basics
+                        else
+                            li
+                                a(href='/top/') Startup Basics
+                        if menu == 'Mini Bits'
+                            li.active
+                                a(href='/mini/') Mini Bits
+                        else
+                            li
+                                a(href='/mini/') Mini Bits
+                        if menu == 'Speak Startup'
+                            li.active
+                                a(href='/speak/') Speak Startup
+                        else
+                            li
+                                a(href='/speak/') Speak Startup
+                        if menu == 'Recommended Readings'
+                            li.active
+                                a(href='/readings/') Readings
+                        else
+                            li
+                                a(href='/readings/') Readings
+                        if menu == 'About'
+                            li.active
+                                a(href='/about/') About
+                        else
+                            li
+                                a(href='/about/') About
+                        //- li.dropdown
+                            a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') Articles &nbsp;
+                                span.fa.fa-angle-down
+                            ul.dropdown-menu
+                                li
+                                    a(href='#') Venture Club
+                                li
+                                   a(href='#') Orientation Leader
+                                li
+                                    a(href='#') MATH42 Workshop
+                                li
+                                    a(href='#') View More
+                form.navbar-form.navbar-right(role='search')
+                    .form-group
+                        span.fa.fa-search &nbsp;
+                        input.form-control(type='text', placeholder='search and press enter', id="search")

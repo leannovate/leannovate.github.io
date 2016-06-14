@@ -1,0 +1,134 @@
+doctype html
+html
+    head
+        // Include the meta tags
+        include ../partials/meta.jade
+    body
+        // Include the Navbar
+        include ../partials/navbar.jade
+        include ../partials/mixins.jade
+        +navbar('Speak Startup')
+
+        // Enter Content Here 
+        +section('Speak Startup', 'Understand the terminologies and the vocabularies used in the startup community.', '/img/speak.png')
+
+        +suggestion('If you think we\'re missing a definition related to startup/entrepreneurship or for any suggestion, ', '#term', true)
+
+        .col-md-12.def-div
+            .col-md-10.col-md-offset-1.box
+                .col-md-8
+                    +term('Acquisition', 'When one company buys controlling stake in another company. Can be friendly (agreed upon) or hostile (no agreement).')
+
+                    +term('Agile', 'A philosophy of software development that promotes incremental development and emphasizes adaptability and collaboration.')
+
+                    +term('Angel Investor', 'Individual who provides a small amount of capital to a startup for a stake in the company. Typically precedes a Seed Round and usually happens when the startup is in its infancy.')
+
+                    +term('B2B', 'Business to business. This describes a business that is targeting another business with its product or services. B2B technology is also sometimes referred to as enterprise technology. This is different from B2C which stands for business to consumer, and involves selling products or services directly to individual customers.')
+
+                    +term('Benchmark', 'The process by which a startup company measures their current success. An investor measures a company\'s growth by determining whether or not they have met certain benchmarks. For example, company A has met the benchmark of having X amount of recurring revenue after 2 years in the market.')
+
+                    +term('Board of Directors', 'A group of influential individuals, elected by stockholders, chosen to oversee the affairs of a company. A board typically includes investors and mentors. Not all startups have a board, but investors typically require a board seat in exchange for an investment in a company.')
+
+                    +term('Bootstrapped', 'A company is bootstrapped when it is funded by an entrepreneur\'s personal resources or the company\'s own revenue. Evolved from the phrase "pulling oneself up by one\'s bootstraps."')
+
+                    +term('Buyout', 'A common exit strategy. The purchase of a company\'s shares that gives the purchaser controlling interest in the company.')
+
+                    +term('Capital', 'Monetary assets currently available for use. Entrepreneurs raise capital to start a company and continue raising capital to grow the company.')
+
+                    +term('Convertible Debt', 'This is when a company borrows money with the intent that the debt accrued will later be converted to equity in the company at a later valuation. This allows companies to delay valuation while raising funding in it\'s early stages. This is typically done in the early stages of a company\'s life, when a valuation is more difficult to complete and investing carries higher risk.')
+
+                    +term('Debt Financing', 'This is when a company raises money by selling bond, bills, or notes to an investor with the promise that the debt will be repaid with interest. It is typically performed by late-stage companies.')
+
+                    +term('Disruption', 'Also known as disruptive innovation. An innovation or technology is disruptive when it "disrupts" an existing market by doing things such as: challenging the prices in the market, displacing an old technology, or changing the market audience.')
+
+                    +term('Enterprise', 'The term enterprise typically refers to a company or business (i.e. an enterprise tech startup is a company that is building technology for businesses).')
+
+                    +term('Equity Financing', 'The act of raising capital by selling off shares of a company. An IPO is technically a form of equity financing.')
+
+                    +term('Exit', 'This is how startup founders get rich. It\'s the method by which an investor and/or entrepreneur intends to "exit" their investment in a company. Commons options are an IPO or buyout from another company. Entrepreneurs and VCs often develop an "exit strategy" while the company is still growing.')
+
+                    +term('Ground Floor', 'A reference to the beginning of a venture, or the earliest point of a startup. Generally considered an advantage to invest at this level.')
+
+                    +term('Incubator', 'An organization that helps develop early stage companies, usually in exchange for equity in the company. Companies in incubators get help for things like building their management teams, strategizing their growth, etc.')
+
+                    +term('IPO', 'Initial Public Offering. The first time shares of stock in a company are offered on a securities exchange or to the general public. At this point, a private company turns into a public company (and is no longer a startup).')
+
+                    +term('Leveraged Buyout', 'When a company is purchased with a strategic combination of equity and borrowed money. The target company\'s assets or revenue is used as "leverage" to pay back the borrowed capital.')
+
+                    +term('Liquidation', 'The process of dissolving a company by selling off all of its assets (making them liquid).')
+
+                    +term('NDA', 'Non-Disclosure Agreement. An agreement between two parties to protect sensitive or confidential information, such as trade secrets, from being shared with outside parties.')
+
+                    +term('Pivot', 'The act of a startup quickly changing direction with its business strategy. For example, an enterprise server startup pivoting to become an enterprise cloud company.')
+
+                    +term('Preferred Stock', 'A stock that carries a fixed dividend that is to be paid out before dividends carried by common stock.')
+
+                    +term('Proof of Concept', 'A demonstration of the feasibility of a concept or idea that a startup is based on. Many VCs require proof of concept if you wish to pitch to them.')
+
+                    +term('Recapitalization', 'A corporate reorganization of a company\'s capital structure, changing the mix of equity and debt. A company will usually recapitalize to prepare for an exit, lower taxes, or defend against a takeover.')
+
+                    +term('ROI', 'This is the much-talked-about "return on investment." It\'s the money an investor gets back as a percentage of the money he or she has invested in a venture. For example, if a VC invests $2 million for a 20 percent share in a company and that company is bought out for $40 million, the VC\'s return is $8 million.')
+
+                    +term('Round', 'Startups raise capital from VC firms in individual rounds, depending on the stage of the company. The first round is usually a Seed round followed by Series A, B, and C rounds if necessary. In rare cases rounds can go as far as Series F, as was the case with Box.net.')
+
+                    +term('SaaS', 'Software as a service. A software product that is hosted remotely, usually over the internet (a.k.a. "in the cloud").')
+
+                    +term('Seed', 'The seed round is the first official round of financing for a startup. At this point a company is usually raising funds for proof of concept and/or to build out a prototype and is referred to as a "seed stage" company.')
+
+                    +term('Sector', 'The market that a startup companies product or service fits into. Examples include: consumer technology, cleantech, biotech, and enterprise technology. Venture Capitalists tend to have experience investing in specific related sectors and thus tend not to invest outside of their area of expertise.')
+
+                    +term('Series', 'Refers to the specific round of financing a company is raising. For example, company X is raising their Series A round.')
+
+                    +term('Stage', 'The stage of development a startup company is in. There is no explicit rule for what defines each stage of a company, but startups tend to be categorized as seed stage, early stage, mid-stage, and late stage. Most VCs firms only invest in companies in one or two stages. Some firms, however, manage multiple funds geared toward different stage companies.')
+
+                    +term('Startup', 'A startup company is a company in the early stages of operations. Startups are usually seeking to solve a problem of fill a need, but there is no hard-and-fast rule for what makes a startup. A company is considered a startup until they stop referring to themselves as a startup.')
+
+                    +term('Term Sheet', 'A non-binding agreement that outlines the major aspects of an investment to be made in a company. A term sheet sets the groundwork for building out detailed legal documents.')
+
+                    +term('Valuation', 'The process by which a company\'s worth or value is determined. An analyst will look at capital structure, management team, and revenue or potential revenue, among other things.')
+
+                    +term('Venture Capital', 'Money provided by venture capital firms to small, high-risk, startup companies with major growth potential.')
+
+                    +term('Venture Capitalist', 'An individual investor, working for a venture capital firm, that chooses to invest in specific companies. Venture capitalists typically have a focused market or sector that they know well and invest in.')
+
+                    +term('Vesting', 'When an employee of a company gains rights to stock options and contributions provided by the employer. The rights typically gain value (vest) over time until they reach their full value after a pre-determined amount of time.')
+                .col-md-4.side
+                    .col-md-12
+                        .catalogPreview
+                            +context('Trending Today', 'Trending Videos and Articles')
+                            .body
+                                +article('#', 'Angel Investors vs. VCs', 'June 2, 2016')
+                                +article('#', 'Ron Conway @ Startup School', 'June 2, 2016')
+                                +article('#', '#AskGaryVee Episode 210', 'June 2, 2016')
+                                button.btn.btn-more View More
+                        .catalogPreview
+                            +context('Speak Startup', 'Understand the terminology of Startups')
+                            .body
+                                +pane(
+                                    '#', 
+                                    'Pivot', 
+                                    'The act of a startup quickly changing direction with its business strategy. For example, an enterprise server startup pivoting to become an enterprise cloud company.'
+                                )
+                                +pane(
+                                    '#', 
+                                    'Liquidation', 
+                                    'The process of dissolving a company by selling off all of its assets (making them liquid).'
+                                )
+                                button.btn.btn-more View More
+                        .catalogPreview
+                            +context('Top Ten', 'List of Lessons you\'ll need')
+                            .body
+                                +article('#', 'Top 10 Mistakes Entprepreneurs Make', 'June 2, 2016')
+                                +article('#', 'Top 10 Things to Succeed', 'June 2, 2016')
+                                +article('#', 'Top 10 Business Modelss', 'June 2, 2016')
+                                button.btn.btn-more View More
+
+        // Include Footer 
+        include ../partials/footer.jade
+
+        // Include the modal for submit link
+        include ../partials/request.jade
+        +customModal('Term', 'term')
+
+        // Include the scripts
+        include ../partials/scripts.jade

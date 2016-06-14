@@ -1,0 +1,129 @@
+doctype html
+html
+    head
+        include ../partials/meta.jade
+    body
+        include ../partials/mixins.jade
+        include ../partials/navbar.jade
+        +navbar('Leannovate')
+        +suggestion('If you think we\'re missing your favorite video on startup and entrepreneurship or for any video suggestion, ', '#video')
+        .col-md-12
+            .col-md-10.col-md-offset-1.box
+                .catalogPreview
+                    +context('Added Today', 'Videos on Entpreneuership added today')
+                .row.today
+                    .col-md-6
+                        +card(
+                            'https://www.youtube.com/embed/bNpx7gpSqbY', 
+                            'Biggest Reason Why Startups Succeed',
+                            'Bill Gross got curious about why some succeeded and others failed. So he gathered data and ranked companies on 5 factors.',
+                            'Today', 'Bill Gross'
+                        )
+                    .col-md-6
+                        +card(
+                            'https://www.youtube.com/embed/JqxzLUE6pP8', 
+                            'Building the Next Billion Dollar Startup',
+                            'Peter Theil, co-founder of Paypal and author of Zero to One, dicusses about how to create the next billion dollar startup.',
+                            'Today', 'Peter Theil'
+                        )
+                .col-md-8.no-pad
+                    .col-md-6
+                        +smallCard(
+                            'https://www.youtube.com/embed/ii1jcLg-eIQ', 
+                            'Paul Graham on creating a Startup',
+                            'Paul Graham delivers an informative (and highly amusing) talk, addressing counterintuitive parts of startups.',
+                            'June 9', 'Paul Graham'
+                        )
+                    .col-md-6
+                        +smallCard(
+                            'https://www.youtube.com/embed/vnIYXiFvB7k', 
+                            'Gary Vaynerchuk on making money', 
+                            'Quick video of Gary talking to the complainers about how to make that quick buck they\'re looking for.', 
+                            'June 9', 'Gary Vaynerchuk'
+                        )
+                    .col-md-6
+                        +smallCard(
+                            '//www.ora.tv/embed/0_4pfnd56otcut', 
+                            'Gary Vaynerchuk on Growing your Business', 
+                            'Gary Vaynerchuk opens up about the roots of his entrepreneurial spirit and the keys to expanding your business in the digital age.', 
+                            'June 8', 'Gary Vaynerchuk'
+                        )
+                    .col-md-6
+                        +smallCard(
+                            'https://www.youtube.com/embed/092JQrye9IM', 
+                            'Harvard i-lab: Turning Products into Companies', 
+                            'Harvard iLabs presents great insights and tips on how you can turn your product into a company. It\' long but worth the time.', 
+                            'June 8', 'Hardvard i-Labs'
+                        )
+                    .col-md-6
+                        +smallCard(
+                            'https://www.youtube.com/embed/mv1ygONQR8Q', 
+                            'Gary Vee: You Better Figure It the Hell Out',
+                            'Gary Vaynerchuk drops by the chat room with a heated argument about figuring things out. In simple words, Gary Vee is being Gary Vee.', 
+                            'June 8', 'Gary Vaynerchuk'
+                        )
+                    .col-md-6
+                        +smallCard(
+                            'https://www.youtube.com/embed/zYM90Y09r00', 
+                            'Kevin Systrom: How Instagram made it Big', 
+                            'Kevin Systrom, CEO of Instagram talks about the beginning days of Instagram and how they made their app into a multi-billion dollar company.', 
+                            'June 8', 'Kevin Systrom'
+                        )
+                    .col-md-6
+                        +smallCard(
+                            'https://www.youtube.com/embed/yODORwGmHqo', 
+                            'Peter Thiel: successful businesses are based on secrets', 
+                            'Peter Theil just being Peter Theil, talking about creating successful businesses and how they\'re made.', 
+                            'Jun 7', 'Peter Thiel'
+                        )
+                    .col-md-6
+                        +smallCard(
+                            'https://www.youtube.com/embed/HHjgK6p4nrw', 
+                            'Top Ten Mistakes Entrepreneurs Make', 
+                            'Guy Kawasaki discusses and talks about the Top 10 mistakes young entprenreneurs make.', 
+                            'Jun 6', 'Guy Kawasaki'
+                        )
+                    .col-md-6
+                        +smallCard(
+                            'https://www.youtube.com/embed/qvHhhIfu7Lo?list=PLQ-uHSnFig5OyY5JWSQrl_gESiEUJxe1m', 
+                            'Ron Conway at Startup School 2014', 
+                            'Ron Conway, a well known Angel Investor, talks about starting a company along with Paul Graham of YCombinator.', 
+                            'Jun 6', 'Ron Conway & Paul Graham'
+                        )
+                .col-md-4.side
+                    .col-md-12
+                        .catalogPreview
+                            +context('Trending Today', 'Trending Videos and Articles')
+                            .body
+                                +article('#', 'Angel Investors vs. VCs', 'June 2, 2016')
+                                +article('#', 'Ron Conway @ Startup School', 'June 2, 2016')
+                                +article('#', '#AskGaryVee Episode 210', 'June 2, 2016')
+                                button.btn.btn-more View More
+                        .catalogPreview
+                            +context('Speak Startup', 'Understand the terminology of Startups')
+                            .body
+                                +pane(
+                                    '#', 
+                                    'Pivot', 
+                                    'The act of a startup quickly changing direction with its business strategy. For example, an enterprise server startup pivoting to become an enterprise cloud company.'
+                                )
+                                +pane(
+                                    '#', 
+                                    'Liquidation', 
+                                    'The process of dissolving a company by selling off all of its assets (making them liquid).'
+                                )
+                                button.btn.btn-more View More
+                        .catalogPreview
+                            +context('Top Ten', 'List of Lessons you\'ll need')
+                            .body
+                                +article('#', 'Top 10 Mistakes Entprepreneurs Make', 'June 2, 2016')
+                                +article('#', 'Top 10 Things to Succeed', 'June 2, 2016')
+                                +article('#', 'Top 10 Business Modelss', 'June 2, 2016')
+                                button.btn.btn-more View More
+        // Include Footer 
+        include ../partials/footer.jade
+
+        include ../partials/request.jade
+        +customModal('Video', 'video')
+
+        include ../partials/scripts.jade

@@ -1,0 +1,38 @@
+doctype html
+html
+    head
+        // Include the meta tags
+        include ../partials/meta.jade
+    body
+        // Include the Navbar
+        include ../partials/navbar.jade
+        include ../partials/mixins.jade
+        +navbar('Recommended Readings')
+
+        // Enter Content Here 
+        +section('Recommended Readings', 'Readings that will inspire and extend your knowledge of startups & entrepreneurship.', '/img/book.png')
+
+        +suggestion('If you think we\'re missing your favorite book on startup and entrepreneurship or for any suggestion, ', '#book', true)
+        .col-md-12.no-pad
+            //- Zero to One
+            +book('/img/books/zero-to-one.jpg', 'Zero to One', 'Peter Theil', 'Best book ever by Peter Theil that talks about how successful startups are created and how it\'s about solving a problem.', '4.5','http://www.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296')
+
+            //- The Lean Startup
+            +book('/img/books/lean-startup.jpg', 'The Lean Startup', 'Eric Ries', 'The Lean Startup by Eric Ries talks about a methology called \'Lean\' methodology which is key to startups nowadays.', '4.5', 'https://www.amazon.com/Lean-Startup-Entrepreneurs-Continuous-Innovation-ebook/dp/B004J4XGN6?ie=UTF8&ref_=dp_kinw_strp_1')
+
+            //- The Four Steps to the Epiphany
+            +book('/img/books/four-steps-to-epiphany.jpg', 'The Four Steps to the Epiphany', 'Steve Blank', 'In this book, Blank clearly outlined how to organize sales and marketing, discover flaws and test assumptions.', '4.7', 'http://www.amazon.com/Four-Steps-Epiphany-Steve-Blank/dp/0989200507')
+
+            //- The Power of Habit
+            +book('/img/books/power-of-habit.jpg', 'The Power of Habit', 'Charles Duhigg', 'Charles Duhigg on how our habits predict not only life-changing events but also the behavior of consumers.', '4.5', 'http://www.amazon.com/Power-Habit-What-Life-Business/dp/081298160X?ie=UTF8&keywords=The%20Power%20of%20Habit%3A%20Why%20We%20Do%20What%20We%20Do%20in%20Life%20and%20Business&qid=1465430951&ref_=sr_1_1&s=books&sr=1-1')
+
+
+        // Include Footer 
+        include ../partials/footer.jade
+
+        // Include the modal for submit link
+        include ../partials/request.jade
+        +customModal('Book', 'book')
+
+        // Include the scripts
+        include ../partials/scripts.jade
