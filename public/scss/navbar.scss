@@ -1,0 +1,109 @@
+@import 'variables';
+
+.navbar, 
+.navbar-default {
+    .navbar-header {
+        a {
+            padding: 0;
+            margin-right: 40px;
+        }
+    }
+    padding: 0px 28px;
+    padding-left: 10%;
+    background: $white;
+    border-bottom: 1px solid #EEE;
+    a, 
+    a:focus,
+    a:hover {
+        border: none;
+        text-decoration: none;
+    }
+    .navbar-nav {
+        li {
+            background: $transparent;
+            font: $medium 12px/22px Roboto;
+            text-transform: uppercase;
+            padding: 0px 5px;
+            margin-top: 8px;
+            a,
+            a:focus {
+                @include transition(.5s);
+                background: $transparent;
+                padding: 6px 16px;
+                border-radius: 25px;
+                color: #AAA;
+            }
+            a:hover {
+                color: $white;
+                background: $middle;
+            }
+        }
+        .active {
+            a,
+            a:focus {
+                @include transition(.5s);
+                color: $white;
+                background: $middle;
+            }
+            a:hover {
+                color: $white;
+                background: $primary;
+            }
+        }
+        .dropdown {
+            a, a:focus {
+                background: transparent;
+            }
+            .dropdown-menu {
+                margin-top: 6px;
+                border: none;
+                box-shadow: none;
+                border-radius: 4px;
+                background: #F7F7F7;
+                li {
+                    margin: 0;
+                    a {
+                        padding: 12px 12px;
+                        border-radius: 0;
+                        color: #888;
+                        border: none !important;
+                    }
+                    a:hover {
+                        background: $primary;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+    .navbar-form {
+        .form-group {
+            position: relative;
+            span {
+                position: absolute;
+                top: 9px;
+                left: 14px;
+                font-size: 15px;
+                font-weight: 100;
+                color: #AAA;
+            }
+            input,
+            input:focus {
+                text-indent: 30px;
+                float: right;
+                background: #F5F5F5;
+                color: #666;
+                border: none;
+                border-radius: 2px;
+                font: $normal 15px/44px Roboto;
+                outline: 0;
+                box-shadow: none;
+                margin: 0;
+                width: 300px;
+            }
+            ::-webkit-input-placeholder {
+                color: #AAA;
+            }
+        }
+    }
+}

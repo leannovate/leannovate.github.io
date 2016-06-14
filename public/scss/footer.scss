@@ -1,0 +1,48 @@
+@import 'variables';
+
+.footer {
+    background: $diagonal-bot-right;
+    padding: 25px 20px;
+    .top {
+        text-align: left;
+        h3 {
+            font: $normal 24px/28px $font;
+            color: $white;
+        }
+        p {
+            font: $normal 16px/24px Roboto;
+            color: rgba(255,255,255,0.86);
+        }
+    }
+    .cols {
+        h4 {
+            color: $white;
+            font: $normal 17px/22px $font;
+        }
+        ul {
+            li {
+                list-style-type: none;
+                a,
+                a:focus {
+                    @include transition(.4s);
+                    font: $light 15px/23px $font;
+                    color: rgba(255,255,255,0.8);
+                }
+                a:hover {
+                    color: $white;
+                }
+            }
+        }
+    }
+    .bottom {
+        text-align: center;
+        hr {
+            border-color: rgba(255,255,255,0.2);
+        }
+        p {
+            color: rgba(255,255,255,0.86);
+            font: $normal 16px/22px $font;
+            margin: 0;
+        }
+    }
+}

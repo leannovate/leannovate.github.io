@@ -1,0 +1,34 @@
+@import 'variables';
+
+/* General CSS Properties */
+body {
+    font: $light 16px/23px $font;
+    background: #FAFAFA;
+    padding-top: 50px;
+}
+a {
+    @include transition(.4s);
+    color: $middle;
+}
+a:focus,
+a:hover {
+    color: $primary;
+    text-decoration: none;
+}
+
+/* Div Tags CSS */
+@import 'div';
+
+/* Image & Buttons */
+@import 'img';
+@import 'buttons';
+
+/* Helper */
+@import 'helper';
+
+/* Navbar & Footer */
+@import 'navbar';
+@import 'footer';
+
+/* Modal */
+@import 'modal';

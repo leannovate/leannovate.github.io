@@ -1,0 +1,89 @@
+@import 'variables';
+
+.btn,
+.btn:focus {
+    @include transition(.5s);
+    outline: 0;
+    box-shadow: 0;
+    border: none;
+}
+.btn-req,
+.btn-req:focus {
+    background: $transparent;
+    color: $middle;
+    border: none;
+    border-radius: 3px;
+    font: $normal 14px Roboto;
+    padding: 9px 20px;
+    margin-top: 8px;
+}
+.btn-req:hover {
+    background: #F5F5F5;
+    color: $middle;
+}
+.btn-more,
+.btn-more:focus {
+    background: $transparent;
+    color: $secondary;
+    padding: 0;
+    float: right;
+}
+.btn-more:hover {
+    color: $primary;
+}
+.btn-up,
+.btn-down {
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    margin: 2px 0;
+    span {
+        color: $white;
+    }
+}
+.btn-up {
+    background: $primary;
+}
+.btn-down {
+    background: #CCC;
+}
+.btn-get-book,
+.btn-get-book:focus {
+    margin: 12px 4px 0;
+    background: $middle;
+    font: $normal 15px/28px $font;
+    color: $white;
+    border-radius: 20px;
+    padding: 6px 22px;
+}
+.btn-get-book:hover {
+    background: $primary;
+    color: $white;
+}
+.btn-search,
+.btn-search:focus {
+    margin: 0px 4px 20px;
+    background: #F5F5F5;
+    font: $normal 15px/28px $font;
+    color: #888;
+    border-radius: 20px;
+    padding: 6px 22px;
+}
+.btn-search:hover {
+    background: #888;
+    color: $white;
+}
+.btn-view,
+.btn-view:focus {
+    background: $transparent;
+    border: 2px solid #AAA;
+    color: #AAA;
+    margin: 4px;
+    border-radius: 25px;
+    padding: 7px 16px;
+}
+.btn-view:hover {
+    background: $middle;
+    color: $white;
+    border-color: $middle;
+}

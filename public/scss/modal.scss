@@ -1,0 +1,147 @@
+/* Modal CSS */
+.modal-dialog {
+    width: 40%;
+    margin-top: 8%;
+    .modal-content {
+        background: $white;
+        box-shadow: none;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        margin: 15px 0;
+        .modal-header {
+            background: $white;
+            border-bottom: 1px solid #EEE;
+            p {
+                font: $light 17px/22px Roboto;
+                color: #888;
+            }
+            .close,
+            .close:focus {
+                @include transition(0.4s);
+                padding-right: 15px;
+                outline: 0;
+                span,
+                span:focus {
+                    font-weight: $thin;
+                }
+            }
+            .navbar-nav {
+                li {
+                    font: $normal 15px/44px Roboto;
+                    padding: 4px 3px;
+                    a,
+                    a:focus {
+                        @include transition(.5s);
+                        padding: 8px 16px;
+                        border-radius: 20px;
+                        color: #AAA;
+                        border: 1px solid #AAA;
+                    }
+                    a:hover {
+                        color: $white;
+                        background: $primary;
+                        border-color: $primary;
+                    }
+                }
+                .active {
+                    a,
+                    a:focus,
+                    a:hover {
+                        @include transition(.5s);
+                        color: $white;
+                        background: $primary;
+                        border-color: $primary;
+                    }
+                }
+            }
+        }
+        .modal-body {
+            border: none;
+            padding: 22px 20px;
+            #title,
+            #title:focus {
+                border: none;
+                font: $medium 24px/25px Roboto;
+                color: rgba(25,25,25,0.8);
+                outline: 0;
+                width: 100%;
+            }
+            #link,
+            #link:focus {
+                border: none;
+                font: $medium 20px/25px Roboto;
+                color: rgba(25,25,25,0.8);
+                outline: 0;
+                width: 100%;
+            }
+            textarea,
+            textarea:focus {
+                margin-top: 10px;
+                margin-bottom: 4px;
+                border: none;
+                font-weight: $normal;
+                color: rgba(25,25,25,0.7);
+                font-size: 16px;
+                resize: none;
+                outline: 0;
+                width: 100%;
+            }
+            #author,
+            #author:focus {
+                border: none;
+                margin-top: 3px;
+                font: $normal 16px/25px Roboto;
+                color: $middle;
+                outline: 0;
+                width: 100%;
+            }
+            #author::-webkit-input-placeholder {
+               color: rgba(0,156,255,0.8);
+            }
+            #rating,
+            #rating:focus {
+                border: none;
+                margin-bottom: 15px;
+                font: $normal 18px/25px Roboto;
+                color: rgba(25,25,25,0.7);
+                outline: 0;
+                width: 100%;
+            }
+            h4 {
+                text-transform: uppercase;
+                font-size: 13px;
+                font-weight: $bold;
+                color: $middle;
+            }
+        }
+        .modal-footer {
+            border-color: #EEE;
+            .btn-note,
+            .btn-note:focus,
+            .btn-cancel,
+            .btn-cancel:focus {
+                text-transform: uppercase;
+                font-size: 13px;
+                font-weight: $medium;
+                background: none;
+                border-radius: 3px;
+                border: none;
+
+            }
+            .btn-note {
+                color: $middle;
+            }
+            .btn-cancel {
+                color: #AAA;
+            }
+            .btn-note:hover {
+                background: #EEE;
+                color: $middle;
+            }
+            .btn-cancel:hover {
+                color: #888;
+            }
+        }
+    }
+}

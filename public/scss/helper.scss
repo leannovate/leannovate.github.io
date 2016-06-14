@@ -1,0 +1,26 @@
+@import 'variables';
+
+.no-pad {
+    padding: 0 !important;
+}
+.list-group {
+    border: none;
+    a {
+        border: none;
+        text-align: left;
+        background: $transparent;
+        color: #EEE;
+        padding: 15px 25px;
+        span {
+            padding-right: 8px;
+        }
+    }
+    .active {
+        background: #353856;
+        border-radius: 0;
+        color: $white;
+    }
+}
+.box {
+    padding: 60px 0;
+}

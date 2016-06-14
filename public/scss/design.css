@@ -1,0 +1,738 @@
+/* Importing Google Font */
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700);
+/* Color Declarations */
+/* Declaring Variables */
+/* Font Properties */
+/* Mixins */
+/* General CSS Properties */
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700);
+body {
+  font: 300 16px/23px Roboto;
+  background: #FAFAFA;
+  padding-top: 50px; }
+
+a {
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  transition: all 0.4s;
+  color: #009CFF; }
+
+a:focus,
+a:hover {
+  color: #0072FF;
+  text-decoration: none; }
+
+/* Div Tags CSS */
+/* Importing Google Font */
+/* Color Declarations */
+/* Declaring Variables */
+/* Font Properties */
+/* Mixins */
+.head {
+  background: linear-gradient(90deg, #0072FF, #00C6FF);
+  padding: 40px 0;
+  text-align: center; }
+  .head img {
+    height: 75px;
+    width: auto;
+    margin-bottom: 10px; }
+  .head h3 {
+    color: #FFF;
+    font: 300 28px/30px Roboto; }
+  .head p {
+    margin: 0;
+    font: 300 18px/28px Roboto;
+    color: rgba(255, 255, 255, 0.8); }
+    .head p span {
+      color: #FFF; }
+
+.card, .pane {
+  background: #FFF;
+  padding: 0 0 28px;
+  margin: 16px 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.09);
+  border-radius: 5px; }
+  .card .top, .pane .top {
+    padding-bottom: 2px; }
+    .card .top h3, .pane .top h3 {
+      font: 300 25px Roboto;
+      color: #666; }
+  .card .video, .pane .video {
+    padding-bottom: 10px; }
+    .card .video iframe, .pane .video iframe {
+      width: 100%;
+      height: 280px; }
+  .card .about .description, .pane .about .description {
+    color: #888;
+    font: 300 16px/26px Roboto;
+    padding-bottom: 18px; }
+  .card .about .by, .pane .about .by {
+    color: #888;
+    font: 300 14px Roboto; }
+    .card .about .by span, .pane .about .by span {
+      font-weight: 400;
+      color: #009CFF; }
+  .card .share, .pane .share {
+    padding-top: 5px; }
+    .card .share a, .pane .share a,
+    .card .share a:focus,
+    .pane .share a:focus {
+      background: #EEE;
+      color: #888;
+      border-radius: 20px;
+      padding: 8px 20px;
+      margin-right: 8px; }
+    .card .share a:hover, .pane .share a:hover {
+      background: #009CFF;
+      color: #FFF; }
+
+.small {
+  padding: 0 0 15px; }
+  .small .video > iframe {
+    width: 100%;
+    height: 176px; }
+  .small .text .top h3 {
+    font: 300 20px/28px Roboto; }
+  .small .text .about .description {
+    font: 300 14px/22px Roboto;
+    padding-bottom: 8px; }
+  .small .text .share {
+    padding-top: 5px; }
+    .small .text .share a,
+    .small .text .share a:focus {
+      background: #EEE;
+      color: #888;
+      border-radius: 100%;
+      height: 38px;
+      width: 36px;
+      margin-right: 6px; }
+      .small .text .share a span,
+      .small .text .share a:focus span {
+        position: relative; }
+      .small .text .share a .fa-facebook,
+      .small .text .share a:focus .fa-facebook {
+        top: 1px;
+        left: -5px; }
+      .small .text .share a .fa-twitter,
+      .small .text .share a:focus .fa-twitter {
+        top: 1px;
+        left: -6px; }
+      .small .text .share a .fa-linkedin,
+      .small .text .share a:focus .fa-linkedin {
+        top: 0px;
+        left: -6px; }
+    .small .text .share a:hover {
+      background: #009CFF;
+      color: #FFF; }
+
+.catalogPreview {
+  padding: 20px 0; }
+  .catalogPreview .header {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #EEE; }
+    .catalogPreview .header .catalog-name {
+      color: #888; }
+    .catalogPreview .header .catalog-description {
+      color: #AAA; }
+
+.pane {
+  margin: 14px 0;
+  border: none;
+  background: linear-gradient(-45deg, #00C6FF, #0072FF);
+  padding: 15px 20px 10px; }
+  .pane .term {
+    font: 400 16px Roboto;
+    color: #FFF; }
+  .pane .def {
+    font: 300 15px/22px Roboto;
+    color: rgba(255, 255, 255, 0.85); }
+
+.article {
+  border: none;
+  border-radius: 4px;
+  background: linear-gradient(-45deg, #00C6FF, #0072FF);
+  padding: 15px 20px 10px;
+  margin: 14px 0; }
+  .article .title {
+    font: 400 16px Roboto;
+    color: #FFF;
+    margin: 0; }
+  .article .date {
+    color: rgba(255, 255, 255, 0.8);
+    font: 400 14px Roboto;
+    padding-top: 4px; }
+    .article .date span {
+      color: #FFF;
+      padding: 3px 2px; }
+
+.rate {
+  position: absolute;
+  left: -50px;
+  top: 0px; }
+
+.about-us {
+  background: #FFF;
+  padding: 15px; }
+  .about-us hr {
+    border-color: #F5F5F5; }
+  .about-us .statement {
+    padding: 40px;
+    text-align: center; }
+    .about-us .statement img {
+      height: 70px;
+      width: 70px; }
+    .about-us .statement h2 {
+      font: 300 33px/44px Roboto;
+      color: #009CFF;
+      padding-bottom: 10px; }
+    .about-us .statement p {
+      color: #999;
+      font: 300 18px/30px Roboto;
+      margin: 0; }
+
+.section {
+  background: linear-gradient(90deg, #0072FF, #00C6FF);
+  padding: 50px 0; }
+  .section h2 {
+    font: 300 35px/42px Roboto;
+    color: #FFF; }
+  .section p {
+    margin: 0;
+    font: 300 18px/28px Roboto;
+    color: rgba(255, 255, 255, 0.8); }
+    .section p span {
+      color: #FFF; }
+  .section img {
+    height: 120px;
+    width: auto;
+    margin: 10px;
+    float: right; }
+
+.book-review {
+  background: #FFF;
+  text-align: center;
+  padding: 55px 50px;
+  border-right: 1px solid #F5F5F5;
+  border-bottom: 1px solid #F5F5F5; }
+  .book-review img {
+    height: 200px; }
+  .book-review h2 {
+    color: #444;
+    font: 300 30px/52px Roboto;
+    margin-bottom: 0; }
+  .book-review small {
+    color: #009CFF;
+    font: 300 20px/33px Roboto;
+    padding: 6px 0 8px; }
+  .book-review p {
+    padding-top: 6px;
+    font: 300 18px/28px Roboto;
+    color: #888; }
+  .book-review .ratings p {
+    color: #888;
+    font: 300 16px/22px Roboto;
+    display: inline;
+    padding-right: 8px; }
+    .book-review .ratings p span {
+      color: #009CFF;
+      font: 400 16px/22px Roboto; }
+  .book-review .ratings .rates {
+    display: inline; }
+    .book-review .ratings .rates span {
+      color: #009CFF;
+      padding: 2px; }
+
+.def-div {
+  padding: 15px; }
+  .def-div .definition {
+    background: #FFF;
+    padding: 10px 32px 20px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.09);
+    border-radius: 5px; }
+    .def-div .definition h3 {
+      color: #009CFF;
+      font: 300 26px/42px Roboto; }
+    .def-div .definition p {
+      font: 300 16px/28px Roboto;
+      color: #888;
+      padding-bottom: 5px; }
+
+.submit {
+  background: #009CFF;
+  padding: 15px 10px;
+  text-align: center; }
+  .submit p {
+    font: 300 17px/28px Roboto;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0; }
+  .submit a, .submit a:focus {
+    color: #FFF; }
+  .submit a:hover {
+    cursor: pointer; }
+
+.inverse {
+  background: #F5F5F5; }
+  .inverse p {
+    color: #888; }
+  .inverse a {
+    color: #009CFF; }
+
+.basics-div {
+  padding: 20px; }
+  .basics-div .col-md-4 .categories {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    background: #FFF;
+    margin: 15px 0px;
+    text-align: center;
+    border-radius: 5px; }
+    .basics-div .col-md-4 .categories img {
+      margin-top: 30px;
+      height: 40px;
+      width: auto; }
+    .basics-div .col-md-4 .categories h3 {
+      font: 300 24px/30px Roboto;
+      color: #36B2FA;
+      padding: 4px 20px; }
+    .basics-div .col-md-4 .categories hr {
+      width: 80%; }
+    .basics-div .col-md-4 .categories ul {
+      padding-left: 30px;
+      text-align: left; }
+    .basics-div .col-md-4 .categories iframe {
+      width: 100%;
+      height: 215px;
+      padding: 0; }
+    .basics-div .col-md-4 .categories p {
+      color: #888;
+      text-align: center;
+      font: 100 17px/30px Roboto;
+      padding: 4px 30px 10px; }
+
+.today {
+  margin-bottom: 30px; }
+
+/* Image & Buttons */
+img {
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none; }
+
+.logo {
+  height: 65px; }
+
+/* Importing Google Font */
+/* Color Declarations */
+/* Declaring Variables */
+/* Font Properties */
+/* Mixins */
+.btn,
+.btn:focus {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+  outline: 0;
+  box-shadow: 0;
+  border: none; }
+
+.btn-req,
+.btn-req:focus {
+  background: transparent;
+  color: #009CFF;
+  border: none;
+  border-radius: 3px;
+  font: 400 14px Roboto;
+  padding: 9px 20px;
+  margin-top: 8px; }
+
+.btn-req:hover {
+  background: #F5F5F5;
+  color: #009CFF; }
+
+.btn-more,
+.btn-more:focus {
+  background: transparent;
+  color: #00C6FF;
+  padding: 0;
+  float: right; }
+
+.btn-more:hover {
+  color: #0072FF; }
+
+.btn-up,
+.btn-down {
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  margin: 2px 0; }
+  .btn-up span,
+  .btn-down span {
+    color: #FFF; }
+
+.btn-up {
+  background: #0072FF; }
+
+.btn-down {
+  background: #CCC; }
+
+.btn-get-book,
+.btn-get-book:focus {
+  margin: 12px 4px 0;
+  background: #009CFF;
+  font: 400 15px/28px Roboto;
+  color: #FFF;
+  border-radius: 20px;
+  padding: 6px 22px; }
+
+.btn-get-book:hover {
+  background: #0072FF;
+  color: #FFF; }
+
+.btn-search,
+.btn-search:focus {
+  margin: 0px 4px 20px;
+  background: #F5F5F5;
+  font: 400 15px/28px Roboto;
+  color: #888;
+  border-radius: 20px;
+  padding: 6px 22px; }
+
+.btn-search:hover {
+  background: #888;
+  color: #FFF; }
+
+.btn-view,
+.btn-view:focus {
+  background: transparent;
+  border: 2px solid #AAA;
+  color: #AAA;
+  margin: 4px;
+  border-radius: 25px;
+  padding: 7px 16px; }
+
+.btn-view:hover {
+  background: #009CFF;
+  color: #FFF;
+  border-color: #009CFF; }
+
+/* Helper */
+/* Importing Google Font */
+/* Color Declarations */
+/* Declaring Variables */
+/* Font Properties */
+/* Mixins */
+.no-pad {
+  padding: 0 !important; }
+
+.list-group {
+  border: none; }
+  .list-group a {
+    border: none;
+    text-align: left;
+    background: transparent;
+    color: #EEE;
+    padding: 15px 25px; }
+    .list-group a span {
+      padding-right: 8px; }
+  .list-group .active {
+    background: #353856;
+    border-radius: 0;
+    color: #FFF; }
+
+.box {
+  padding: 60px 0; }
+
+/* Navbar & Footer */
+/* Importing Google Font */
+/* Color Declarations */
+/* Declaring Variables */
+/* Font Properties */
+/* Mixins */
+.navbar,
+.navbar-default {
+  padding: 0px 28px;
+  padding-left: 10%;
+  background: #FFF;
+  border-bottom: 1px solid #EEE; }
+  .navbar .navbar-header a,
+  .navbar-default .navbar-header a {
+    padding: 0;
+    margin-right: 40px; }
+  .navbar a,
+  .navbar a:focus,
+  .navbar a:hover,
+  .navbar-default a,
+  .navbar-default a:focus,
+  .navbar-default a:hover {
+    border: none;
+    text-decoration: none; }
+  .navbar .navbar-nav li,
+  .navbar-default .navbar-nav li {
+    background: transparent;
+    font: 500 12px/22px Roboto;
+    text-transform: uppercase;
+    padding: 0px 5px;
+    margin-top: 8px; }
+    .navbar .navbar-nav li a,
+    .navbar .navbar-nav li a:focus,
+    .navbar-default .navbar-nav li a,
+    .navbar-default .navbar-nav li a:focus {
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      transition: all 0.5s;
+      background: transparent;
+      padding: 6px 16px;
+      border-radius: 25px;
+      color: #AAA; }
+    .navbar .navbar-nav li a:hover,
+    .navbar-default .navbar-nav li a:hover {
+      color: #FFF;
+      background: #009CFF; }
+  .navbar .navbar-nav .active a,
+  .navbar .navbar-nav .active a:focus,
+  .navbar-default .navbar-nav .active a,
+  .navbar-default .navbar-nav .active a:focus {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    color: #FFF;
+    background: #009CFF; }
+  .navbar .navbar-nav .active a:hover,
+  .navbar-default .navbar-nav .active a:hover {
+    color: #FFF;
+    background: #0072FF; }
+  .navbar .navbar-nav .dropdown a, .navbar .navbar-nav .dropdown a:focus,
+  .navbar-default .navbar-nav .dropdown a,
+  .navbar-default .navbar-nav .dropdown a:focus {
+    background: transparent; }
+  .navbar .navbar-nav .dropdown .dropdown-menu,
+  .navbar-default .navbar-nav .dropdown .dropdown-menu {
+    margin-top: 6px;
+    border: none;
+    box-shadow: none;
+    border-radius: 4px;
+    background: #F7F7F7; }
+    .navbar .navbar-nav .dropdown .dropdown-menu li,
+    .navbar-default .navbar-nav .dropdown .dropdown-menu li {
+      margin: 0; }
+      .navbar .navbar-nav .dropdown .dropdown-menu li a,
+      .navbar-default .navbar-nav .dropdown .dropdown-menu li a {
+        padding: 12px 12px;
+        border-radius: 0;
+        color: #888;
+        border: none !important; }
+      .navbar .navbar-nav .dropdown .dropdown-menu li a:hover,
+      .navbar-default .navbar-nav .dropdown .dropdown-menu li a:hover {
+        background: #0072FF;
+        color: #FFF; }
+  .navbar .navbar-form .form-group,
+  .navbar-default .navbar-form .form-group {
+    position: relative; }
+    .navbar .navbar-form .form-group span,
+    .navbar-default .navbar-form .form-group span {
+      position: absolute;
+      top: 9px;
+      left: 14px;
+      font-size: 15px;
+      font-weight: 100;
+      color: #AAA; }
+    .navbar .navbar-form .form-group input,
+    .navbar .navbar-form .form-group input:focus,
+    .navbar-default .navbar-form .form-group input,
+    .navbar-default .navbar-form .form-group input:focus {
+      text-indent: 30px;
+      float: right;
+      background: #F5F5F5;
+      color: #666;
+      border: none;
+      border-radius: 2px;
+      font: 400 15px/44px Roboto;
+      outline: 0;
+      box-shadow: none;
+      margin: 0;
+      width: 300px; }
+    .navbar .navbar-form .form-group ::-webkit-input-placeholder,
+    .navbar-default .navbar-form .form-group ::-webkit-input-placeholder {
+      color: #AAA; }
+
+/* Importing Google Font */
+/* Color Declarations */
+/* Declaring Variables */
+/* Font Properties */
+/* Mixins */
+.footer {
+  background: -webkit-linear-gradient(45deg, #00C6FF, #0072FF);
+  padding: 25px 20px; }
+  .footer .top {
+    text-align: left; }
+    .footer .top h3 {
+      font: 400 24px/28px Roboto;
+      color: #FFF; }
+    .footer .top p {
+      font: 400 16px/24px Roboto;
+      color: rgba(255, 255, 255, 0.86); }
+  .footer .cols h4 {
+    color: #FFF;
+    font: 400 17px/22px Roboto; }
+  .footer .cols ul li {
+    list-style-type: none; }
+    .footer .cols ul li a,
+    .footer .cols ul li a:focus {
+      -webkit-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+      -ms-transition: all 0.4s;
+      transition: all 0.4s;
+      font: 300 15px/23px Roboto;
+      color: rgba(255, 255, 255, 0.8); }
+    .footer .cols ul li a:hover {
+      color: #FFF; }
+  .footer .bottom {
+    text-align: center; }
+    .footer .bottom hr {
+      border-color: rgba(255, 255, 255, 0.2); }
+    .footer .bottom p {
+      color: rgba(255, 255, 255, 0.86);
+      font: 400 16px/22px Roboto;
+      margin: 0; }
+
+/* Modal */
+/* Modal CSS */
+.modal-dialog {
+  width: 40%;
+  margin-top: 8%; }
+  .modal-dialog .modal-content {
+    background: #FFF;
+    box-shadow: none;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    margin: 15px 0; }
+    .modal-dialog .modal-content .modal-header {
+      background: #FFF;
+      border-bottom: 1px solid #EEE; }
+      .modal-dialog .modal-content .modal-header p {
+        font: 300 17px/22px Roboto;
+        color: #888; }
+      .modal-dialog .modal-content .modal-header .close,
+      .modal-dialog .modal-content .modal-header .close:focus {
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -ms-transition: all 0.4s;
+        transition: all 0.4s;
+        padding-right: 15px;
+        outline: 0; }
+        .modal-dialog .modal-content .modal-header .close span,
+        .modal-dialog .modal-content .modal-header .close span:focus,
+        .modal-dialog .modal-content .modal-header .close:focus span,
+        .modal-dialog .modal-content .modal-header .close:focus span:focus {
+          font-weight: 100; }
+      .modal-dialog .modal-content .modal-header .navbar-nav li {
+        font: 400 15px/44px Roboto;
+        padding: 4px 3px; }
+        .modal-dialog .modal-content .modal-header .navbar-nav li a,
+        .modal-dialog .modal-content .modal-header .navbar-nav li a:focus {
+          -webkit-transition: all 0.5s;
+          -moz-transition: all 0.5s;
+          -ms-transition: all 0.5s;
+          transition: all 0.5s;
+          padding: 8px 16px;
+          border-radius: 20px;
+          color: #AAA;
+          border: 1px solid #AAA; }
+        .modal-dialog .modal-content .modal-header .navbar-nav li a:hover {
+          color: #FFF;
+          background: #0072FF;
+          border-color: #0072FF; }
+      .modal-dialog .modal-content .modal-header .navbar-nav .active a,
+      .modal-dialog .modal-content .modal-header .navbar-nav .active a:focus,
+      .modal-dialog .modal-content .modal-header .navbar-nav .active a:hover {
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        transition: all 0.5s;
+        color: #FFF;
+        background: #0072FF;
+        border-color: #0072FF; }
+    .modal-dialog .modal-content .modal-body {
+      border: none;
+      padding: 22px 20px; }
+      .modal-dialog .modal-content .modal-body #title,
+      .modal-dialog .modal-content .modal-body #title:focus {
+        border: none;
+        font: 500 24px/25px Roboto;
+        color: rgba(25, 25, 25, 0.8);
+        outline: 0;
+        width: 100%; }
+      .modal-dialog .modal-content .modal-body #link,
+      .modal-dialog .modal-content .modal-body #link:focus {
+        border: none;
+        font: 500 20px/25px Roboto;
+        color: rgba(25, 25, 25, 0.8);
+        outline: 0;
+        width: 100%; }
+      .modal-dialog .modal-content .modal-body textarea,
+      .modal-dialog .modal-content .modal-body textarea:focus {
+        margin-top: 10px;
+        margin-bottom: 4px;
+        border: none;
+        font-weight: 400;
+        color: rgba(25, 25, 25, 0.7);
+        font-size: 16px;
+        resize: none;
+        outline: 0;
+        width: 100%; }
+      .modal-dialog .modal-content .modal-body #author,
+      .modal-dialog .modal-content .modal-body #author:focus {
+        border: none;
+        margin-top: 3px;
+        font: 400 16px/25px Roboto;
+        color: #009CFF;
+        outline: 0;
+        width: 100%; }
+      .modal-dialog .modal-content .modal-body #author::-webkit-input-placeholder {
+        color: rgba(0, 156, 255, 0.8); }
+      .modal-dialog .modal-content .modal-body #rating,
+      .modal-dialog .modal-content .modal-body #rating:focus {
+        border: none;
+        margin-bottom: 15px;
+        font: 400 18px/25px Roboto;
+        color: rgba(25, 25, 25, 0.7);
+        outline: 0;
+        width: 100%; }
+      .modal-dialog .modal-content .modal-body h4 {
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 700;
+        color: #009CFF; }
+    .modal-dialog .modal-content .modal-footer {
+      border-color: #EEE; }
+      .modal-dialog .modal-content .modal-footer .btn-note,
+      .modal-dialog .modal-content .modal-footer .btn-note:focus,
+      .modal-dialog .modal-content .modal-footer .btn-cancel,
+      .modal-dialog .modal-content .modal-footer .btn-cancel:focus {
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 500;
+        background: none;
+        border-radius: 3px;
+        border: none; }
+      .modal-dialog .modal-content .modal-footer .btn-note {
+        color: #009CFF; }
+      .modal-dialog .modal-content .modal-footer .btn-cancel {
+        color: #AAA; }
+      .modal-dialog .modal-content .modal-footer .btn-note:hover {
+        background: #EEE;
+        color: #009CFF; }
+      .modal-dialog .modal-content .modal-footer .btn-cancel:hover {
+        color: #888; }
+
+/*# sourceMappingURL=design.css.map */

@@ -1,0 +1,38 @@
+/* Importing Google Font */
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700);
+
+/* Color Declarations */
+$white: #FFF;
+$gray: #7F8C8D;
+$primary: #0072FF;
+$secondary: #00C6FF;
+$middle: #009CFF;
+$sidebar: #3B3F5E;
+
+/* Declaring Variables */
+$transparent: transparent;
+$diagonal-bot-right: -webkit-linear-gradient(45deg, $secondary, $primary);
+$diagonal-top-left: -webkit-linear-gradient(-45deg, $secondary, $primary);
+$left-to-right: -webkit-linear-gradient(90deg, $secondary, $primary);
+
+/* Font Properties */
+$font: Roboto;
+$thin: 100;
+$light: 300;
+$normal: 400;
+$medium: 500;
+$bold: 700;
+
+/* Mixins */
+@mixin transition ($seconds) {
+    -webkit-transition: all $seconds;
+    -moz-transition: all $seconds;
+    -ms-transition: all $seconds;
+    transition: all $seconds;
+}
+@mixin cover($cover) {
+    -webkit-background-size: $cover;
+    -moz-background-size: $cover;
+    background-size: $cover;
+    -o-background-size: $cover;
+}
