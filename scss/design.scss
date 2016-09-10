@@ -1,0 +1,36 @@
+@import '_variables';
+
+/* General CSS Properties */
+body {
+    @include transition(1s);
+    background: #F5F5F5;
+    font-family: $font;
+    font-weight: $light;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+/* Nav bar CSS */
+@import '_navbar';
+
+/* Div Tags CSS */
+@import '_div';
+
+/* Image Tags CSS */
+@import '_img';
+
+/* Button Tags CSS */
+@import '_buttons';
+
+/* Text Properties CSS */
+
+/* Modal CSS */
+@import '_modal';
+
+/* Media Query CSS */
+@import '_media';

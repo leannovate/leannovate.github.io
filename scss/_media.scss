@@ -1,0 +1,58 @@
+@import '_variables';
+
+/* Media Query */
+@media(max-width: 732px) {
+    .navbar {
+        .navbar-brand {
+            position: relative;
+            top: 16px;
+        }
+    }
+    .player-cover {
+        background-position: center center;
+        background-attachment: scroll !important;
+        .basics-info {
+            span.name {
+                font-size: 26px;
+            }
+            span.sub {
+                font-size: 16px;
+            }
+        }
+    }
+    .college-cover {
+        .college-name {
+            font-size: 20px;
+        }
+        #player-fig {
+            display: none;
+        }
+        a {
+            font-size: 14px;
+            padding: 8px 14px;
+        }
+    }
+    .sponsor-cover {
+        padding: 20px;
+        padding-top: 30px;
+        img {
+            margin-bottom: 15px;
+        }
+    }
+    .picture-cover {
+        .gallery .pictures {
+            max-width: 100%;
+        }
+    }
+    .news-cover-xl {
+        .basics-info {
+            left: 30px;
+            span.name {
+                font-size: 15px;
+            }
+            span.sub {
+                font-size: 13px;
+            }
+        }
+    }
+}
